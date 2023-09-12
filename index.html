@@ -23,9 +23,9 @@
 
     <header class="container mx-auto ">
 
-        <nav class="navbar bg-[#F85559] flex justify-between my-3 rounded-[600px] text-white lg:px-10 ">
+        <nav class="navbar flex md:flex-row flex-row-reverse md:bg-[#F85559] justify-between my-3 rounded-[600px] md:text-white lg:px-10 md:px-10">
 
-            <div class="hidden lg:block lg:navbar-start">
+            <div class="hidden lg:block md:block lg:navbar-start">
                 <ul class="w-[300px] flex gap-5">
                     <li><a>Home</a></li>
                     <li><a>About Us</a></li>
@@ -34,26 +34,23 @@
                 </ul>
             </div>
 
-            <div class="navbar-start lg:hidden">
-                <div class="dropdown">
+            <div class="navbar-end px-7 md:hidden lg:hidden">
+                <div class="dropdown dropdown-end">
                     <label tabindex="0" class="btn btn-ghost btn-circle ">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h7" />
-                        </svg>
+                        <i class="fa-solid fa-bars fa-lg"></i>
                     </label>
                     <ul tabindex="0"
                         class="menu text-black menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Homepage</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>About</a></li>
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="navbar-start md:navbar-end md:justify-end lg:justify-center lg:navbar-center">
-                <a class="btn btn-ghost normal-case text-xl">
+                <a class="btn btn-ghost normal-case text-xl lg:mr-[80px]">
                     <img src="images/logo.png" class="w-9" alt="">
                     Fruit Burst</a>
             </div>
